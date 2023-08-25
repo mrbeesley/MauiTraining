@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstApp.ScorllViewPage"
+             Title="ScorllViewPage">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Image Source="emie_picture_tree.png" />
+            <Label Text="This is a label" />
+            <Image Source="emie_picture_tree.png" />
+            <Label Text="This is a label" />
+            <Image Source="emie_picture_tree.png" />
+            <Label Text="This is a label" />
+            <Image Source="emie_picture_tree.png" />
+            <Label Text="This is a label" />
+            <Image Source="emie_picture_tree.png" />
+            <Label Text="This is a label" />
+            <Image Source="emie_picture_tree.png" />
+            <Label Text="This is a label" />
+            <Image Source="emie_picture_tree.png" />
+            <Label Text="This is a label" />
+            <Image Source="emie_picture_tree.png" />
+            <Label Text="This is a label" />
+            <Image Source="emie_picture_tree.png" />
+            <Label Text="This is a label" />
+            <Image Source="emie_picture_tree.png" />
+            <Label Text="This is a label" />
+            <Image Source="emie_picture_tree.png" />
+            <Label Text="This is a label" />
+            <Image Source="emie_picture_tree.png" />
+            <Label Text="This is a label" />
+            <Image Source="emie_picture_tree.png" />
+            <Label Text="This is a label" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

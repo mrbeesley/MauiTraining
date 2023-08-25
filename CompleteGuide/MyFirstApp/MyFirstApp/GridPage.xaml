@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstApp.GridPage"arr
+             Title="GridPage">
+    <Grid RowDefinitions="100,Auto,*"
+          ColumnDefinitions="*,*">
+        <Button BackgroundColor="Red"
+                Grid.Row="0"
+                Grid.Column="0" />
+        <Button BackgroundColor="Green"
+                Grid.Row="0"
+                Grid.Column="1" />
+        <Button BackgroundColor="Brown"
+                Grid.Row="1"
+                Grid.Column="0" />
+        <Button BackgroundColor="Blue"
+                Grid.Row="1"
+                Grid.Column="1" />
+        <Button BackgroundColor="Purple"
+                Grid.Row="2"
+                Grid.Column="0" />
+        <Button BackgroundColor="Orange"
+                Grid.Row="2"
+                Grid.Column="1" />
+    </Grid>
+</ContentPage>

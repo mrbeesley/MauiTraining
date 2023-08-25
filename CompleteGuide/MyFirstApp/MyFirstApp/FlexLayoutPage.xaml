@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstApp.FlexLayoutPage"
+             Title="FlexLayoutPage">
+    <FlexLayout Wrap="Wrap">
+        <Label Text="First label"
+               FontSize="Medium"
+               BackgroundColor="Red"/>
+        <Label Text="Second label"
+               FontSize="Medium"
+               BackgroundColor="Green"/>
+        <Label Text="Third label"
+               FontSize="Medium"
+               BackgroundColor="Yellow"/>
+        <Label Text="Fourth label"
+               FontSize="Medium"
+               BackgroundColor="Pink"/>
+        <Label Text="Fifth label"
+               FontSize="Medium"
+               BackgroundColor="Orange"/>
+        <Label Text="Sixth label"
+               FontSize="Medium"
+               BackgroundColor="Blue"/>
+    </FlexLayout>
+</ContentPage>
