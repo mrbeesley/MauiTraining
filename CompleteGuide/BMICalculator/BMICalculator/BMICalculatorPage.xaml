@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMICalculator.BMICalculatorPage"
+             Title="BMICalculatorPage">
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,*"
+          ColumnDefinitions="0.5*,0.5*"
+          Margin="20"
+          RowSpacing="30"
+          ColumnSpacing="20">
+
+        <Label Text="BMI Calculator"
+               Grid.Row="0"
+               Grid.Column="0"
+               FontSize="Large" />
+
+        <Frame Grid.Row="1"
+               Grid.Column="0"
+               Padding="20"
+               CornerRadius="15"
+               HasShadow="True">
+            <VerticalStackLayout Spacing="10">
+                <Image Source="male"
+                       HeightRequest="100"/>
+                <Label Text="Male"
+                       HorizontalOptions="Center"
+                       FontSize="Body"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <Frame Grid.Row="1"
+               Grid.Column="1"
+               Padding="20"
+               CornerRadius="15"
+               HasShadow="True">
+            <VerticalStackLayout Spacing="10">
+                <Image Source="female"
+                       HeightRequest="100"/>
+                <Label Text="Female"
+                       HorizontalOptions="Center"
+                       FontSize="Body"/>
+            </VerticalStackLayout>
+        </Frame>
+
+    </Grid>
+</ContentPage>
