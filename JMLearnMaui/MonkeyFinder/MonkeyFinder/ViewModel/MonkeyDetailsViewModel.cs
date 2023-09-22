@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace MonkeyFinder.ViewModel;
 
-internal class MonkeyDetailsViewModel
+[QueryProperty("Monkey", "Monkey")]
+public partial class MonkeyDetailsViewModel : BaseViewModel
 {
+    public MonkeyDetailsViewModel() 
+    { 
+
+    }
+
+    [ObservableProperty]
+    Monkey monkey;
 }
