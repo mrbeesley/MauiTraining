@@ -21,6 +21,11 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
 
+        // Built -in Services
+        builder.Services.AddSingleton<IConnectivity>(Connectivity.Current);
+        builder.Services.AddSingleton<IGeolocation>(Geolocation.Default);
+        builder.Services.AddSingleton<IMap>(Map.Default);
+
         // Services
         builder.Services.AddSingleton<MonkeyService>();
 
