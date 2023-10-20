@@ -13,12 +13,9 @@
           ColumnSpacing="5"
           RowDefinitions="*,Auto">
 
-        <RefreshView Grid.ColumnSpan="2"
-                     Command="{Binding GetMonkeysCommand}"
-                     IsRefreshing="{Binding IsRefreshing}">
-
             <CollectionView BackgroundColor="Transparent"
                         ItemsSource="{Binding Monkeys}"
+                        Grid.ColumnSpan="2"
                         SelectionMode="None">
 
                 <CollectionView.EmptyView>
@@ -65,8 +62,8 @@
             </CollectionView.ItemTemplate>
                 
             </CollectionView>
-
-        </RefreshView>
+        
+    
     
         <Button Text="Get Monkeys"
                 Command="{Binding GetMonkeysCommand}"

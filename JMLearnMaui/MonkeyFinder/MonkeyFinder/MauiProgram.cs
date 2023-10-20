@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using MonkeyFinder.Services;
 using MonkeyFinder.View;
+using Microsoft.Maui.Platform;
 
 namespace MonkeyFinder;
 
@@ -20,6 +21,13 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
+        
+// #if IOS // add handler in MauiProgram.cs
+        // Microsoft.Maui.Handlers.ScrollViewHandler.Mapper.AppendToMapping("custom", (handler,view) => {
+        //     handler.PlatformView.UpdateContentSize(handler.VirtualView.ContentSize); 
+        //     handler.PlatformArrange(handler.PlatformView.Frame.ToRectangle());
+        // });
+// #endif
 
         // Built -in Services
         builder.Services.AddSingleton<IConnectivity>(Connectivity.Current);
